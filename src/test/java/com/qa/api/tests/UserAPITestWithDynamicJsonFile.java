@@ -22,7 +22,7 @@ public class UserAPITestWithDynamicJsonFile extends BaseTest {
 	@Test
 	public void createUserWithJsonFileTest() {
 		
-		String jsonFilePath = "src/test/resourcess/jsons/user.json";		
+		String jsonFilePath = "src/test/resources/jsons/user.json";		
 		ObjectMapper mapper = new ObjectMapper();
 		try {
 			JsonNode userNode = mapper.readTree(Files.readAllBytes(Paths.get(jsonFilePath)));
