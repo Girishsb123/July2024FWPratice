@@ -45,6 +45,7 @@ public class BaseTest {
 
 		RestAssured.filters(new AllureRestAssured());
 		restClient = new RestClient();
+		WireMockSetup.createWireMockServer();
 	}
 	
 	@AfterTest
